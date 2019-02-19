@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
     <title>Языковые и оздоровительные лагеря в Краснодарском крае на берегу Черного моря</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -25,7 +26,7 @@
             </span>
         </div>
     </div>
-    <div class="wrapper">
+    <div class="market">
         <div class="filling">
             <div class="breadcrumbs">
                 <a class="step back" href="index.html">Детские лагеря</a> /
@@ -38,52 +39,106 @@
                 <h1 class="page-h1">Языковые и оздоровительные лагеря в Краснодарском крае на берегу Черного моря</h1>
             </div>
             <div class="search-result">Найдено <span class="quantity">123</span> детских лагеря</div>
+
+            <div class="sorting">
+                <label class="sort-price" for="">
+                    <span class="sorting-label">Цена:</span>
+                    <span class="sort-wrap">
+                        <select name="" class="filter-select">
+                            <option value="" selected hidden disabled>Любая</option>
+                        </select>
+                    </span>
+                </label>
+                <label class="sort-shift-work" for="">
+                    <span class="sorting-label">Смена:</span>
+                    <span class="sort-wrap">
+                        <select name="" class="filter-select">
+                            <option value="" selected hidden disabled>Любая</option>
+                        </select>
+                    </span>
+                </label>
+                <label class="sort-reviews" for="">
+                    <span class="sorting-label">Отзывы:</span>
+                    <span class="sort-wrap">
+                        <select name="" class="filter-select">
+                            <option value="" selected hidden disabled>Любые</option>
+                        </select>
+                    </span>
+                </label>
+            </div>
             <div class="filter">
                 <span class="filter-title">Уточнить поиск</span>
-                <form about="">
-                    <label>
-                        <span class="filter-label">Возраст</span>
+                <form action="">
+                    <label class="filter-label" for="">
+                        <span class="filter-name">Возраст</span>
                         <span class="select-wrap">
-                            <select class="filter-select">
+                            <select class="filter-select" name="">
                                 <option value="" selected hidden disabled>Выберите возраст</option>
                                 <option value="">0-14</option>
                                 <option value="">14-20</option>
                                 <option value="">20-45</option>
                             </select>
-                            <span class="caret"></span>
                         </span>
                     </label>
-                    <label>
-                        <span class="filter-label">Страна</span>
+                    <label class="filter-label" for="">
+                        <span class="filter-name">Страна</span>
                         <span class="select-wrap">
-                            <select class="filter-select">
+                            <select class="filter-select" name="">
                                 <option value="" selected hidden disabled>Россия</option>
                                 <option value="">Австралия</option>
                                 <option value="">Австрия</option>
                             </select>
-                            <span class="caret"></span>
                         </span>
                     </label>
-                    <label>
-                        <span class="filter-label">Тип лагеря</span>
+                    <label class="filter-label" for="">
+                        <span class="filter-name">Тип лагеря</span>
                         <span class="select-wrap">
-                            <select class="filter-select">
+                            <select class="filter-select" name="">
                                 <option value="" selected hidden disabled>Выберите тип лагеря</option>
                                 <option value="">Оздоровительные лагеря</option>
                                 <option value="">Школьный лагерь</option>
                             </select>
-                            <span class="caret"></span>
                         </span>
                     </label>
                     <button class="button-default filter-button">Найти лагерь</button>
                 </form>
             </div>
-            <div class="sorting"></div>
             <div class="snippet">
-                <div class="window">
-                    <!--<div class="rabber">-->
-                    <!--<span class="rabber-text">Популярный</span>-->
-                    <!--</div>-->
+                <div class="window popular">
+                    <div class="rabber">
+                        <span class="rabber-text">Популярный</span>
+                    </div>
+                    <div class="left-side">
+                        <h1 class="item-name">Языковой образовательный лагерь "Junior Camp"</h1>
+                        <div class="subtitle">
+                            <span class="firm">ООО Юниум</span><span class="from">Краснодарский край</span>
+                        </div>
+                        <div class="item-middle">
+                            <div class="item-image">
+                                <img src="./images/photo-1472586662442-3eec04b9dbda.png" alt="">
+                            </div>
+                            <div class="item-info">
+                                <div class="tags">
+                                    <span class="tag">Почти спортивный</span>
+                                    <span class="tag">Отличный</span>
+                                    <span class="tag">Образовательный</span>
+                                    <span class="tag">Спортивные</span>
+                                </div>
+                                <p class="description">Каждый родитель хочет видеть своего ребёнка самым счастливым.
+                                    Именно поэтому наш детский лагерь уже 11 лет дарит незабываемые каникулы детям и
+                                    подросткам уже двадцать пять лет падряд.</p>
+                                <div class="infrastructure">
+                                    <span class="building">Футбольное поле</span>
+                                    <span class="building">Баскетбольная площадка</span>
+                                    <span class="building">Бассейн</span>
+                                    <span class="building">Теннисный корт</span>
+                                    <span class="building">Собственный пляж (песок)</span>
+                                </div>
+                                <div class="dates">3 ноября - 15 октября</div>
+                                <a class="see-more" href="index.html">Посмотреть еще смены</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="right-side">
                         <div class="rating">
                             <div class="rating-stars">
@@ -103,27 +158,551 @@
                                     <img src="./images/star.png" alt="">
                                 </span>
                             </div>
-                            <span class="assessment"><b>5.0</b>/5</span>
-                            <span class="reviews">37 отзывов</span>
+                            <p class="client-rating"><span class="average-rating">5.0</span><span
+                                    class="assessment">/5</span></p>
+                            <p class="reviews">37 отзывов</p>
                         </div>
                         <div class="price">
-                            <span class="price-title"></span>
-                            <span class="price-title"></span>
-                            <a href="/" class="button-default item-link">Подробнее</a>
+                            <div class="price-date">Цена до 28 февраля</div>
+                            <div class="price-tag">22 345 Р</div>
                         </div>
+                        <a class="button-default item-link" href="index.html">Подробнее</a>
                     </div>
+                </div>
+                <div class="window">
                     <div class="left-side">
                         <h1 class="item-name">Языковой образовательный лагерь "Junior Camp"</h1>
                         <div class="subtitle">
-                            <span class="firm">ООО Юниум</span>
-                            <span class="from">Краснодарский край</span>
+                            <span class="firm">ООО Юниум</span><span class="from">Краснодарский край</span>
                         </div>
+                        <div class="item-middle">
+                            <div class="item-image">
+                                <img src="./images/michal-parzuchowski-224092.png" alt="">
+                            </div>
+                            <div class="item-info">
+                                <div class="tags">
+                                    <span class="tag">Почти спортивный</span><span class="tag">Отличный</span>
+                                    <span class="tag">Образовательный</span>
+                                    <span class="tag">Спортивные</span>
+                                </div>
+                                <p class="description">Каждый родитель хочет видеть своего ребёнка самым счастливым.
+                                    Именно поэтому наш детский лагерь уже 11 лет дарит незабываемые каникулы детям и
+                                    подросткам уже двадцать пять лет падряд.</p>
+                                <div class="dates">3 ноября - 15 октября</div>
+                                <a class="see-more" href="index.html">Посмотреть еще смены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="rating">
+                            <div class="rating-stars">
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                            </div>
+                            <p class="client-rating"><span class="average-rating">4.5</span><span
+                                    class="assessment">/5</span></p>
+                            <p class="reviews">37 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-date">Цена до 28 февраля</div>
+                            <div class="price-tag">22 345 Р</div>
+                        </div>
+                        <a class="button-default item-link" href="index.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="left-side">
+                        <h1 class="item-name">Языковой образовательный и развивающий лагерь "Junior Camp"</h1>
+                        <div class="subtitle">
+                            <span class="firm">ООО Юниум</span><span class="from">Краснодарский край</span>
+                        </div>
+                        <div class="item-middle">
+                            <div class="item-image">
+                                <img src="./images/photo-1448301566816-a036b4240d58.png" alt="">
+                            </div>
+                            <div class="item-info">
+                                <div class="tags">
+                                    <span class="tag">Почти спортивный</span><span class="tag">Отличный</span>
+                                    <span class="tag">Образовательный</span>
+                                    <span class="tag">Спортивные</span>
+                                </div>
+                                <p class="description">Каждый родитель хочет видеть своего ребёнка самым счастливым.
+                                    Именно поэтому наш детский лагерь уже 11 лет дарит незабываемые каникулы детям и
+                                    подросткам уже двадцать пять лет падряд.</p>
+                                <div class="dates">3 ноября - 15 октября</div>
+                                <a class="see-more" href="index.html">Посмотреть еще смены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="rating">
+                            <div class="rating-stars">
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                            </div>
+                            <p class="client-rating"><span class="average-rating">4.5</span><span
+                                    class="assessment">/5</span></p>
+                            <p class="reviews">37 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-date">Цена до 28 февраля</div>
+                            <div class="price-tag">22 345 Р</div>
+                        </div>
+                        <a class="button-default item-link" href="index.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="left-side">
+                        <h1 class="item-name">Языковой образовательный лагерь "Junior Camp"</h1>
+                        <div class="subtitle">
+                            <span class="firm">ООО Юниум</span><span class="from">Краснодарский край</span>
+                        </div>
+                        <div class="item-middle">
+                            <div class="item-image">
+                                <img src="./images/michal-parzuchowski-224092.png" alt="">
+                            </div>
+                            <div class="item-info">
+                                <div class="tags">
+                                    <span class="tag">Почти спортивный</span><span class="tag">Отличный</span>
+                                    <span class="tag">Образовательный</span>
+                                    <span class="tag">Спортивные</span>
+                                </div>
+                                <p class="description">Каждый родитель хочет видеть своего ребёнка самым счастливым.
+                                    Именно поэтому наш детский лагерь уже 11 лет дарит незабываемые каникулы детям и
+                                    подросткам уже двадцать пять лет падряд.</p>
+                                <div class="dates">3 ноября - 15 октября</div>
+                                <a class="see-more" href="index.html">Посмотреть еще смены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="rating">
+                            <div class="rating-stars">
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                            </div>
+                            <p class="client-rating"><span class="average-rating">4.5</span><span
+                                    class="assessment">/5</span></p>
+                            <p class="reviews">37 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-date">Цена до 28 февраля</div>
+                            <div class="price-tag">22 345 Р</div>
+                        </div>
+                        <a class="button-default item-link" href="index.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="left-side">
+                        <h1 class="item-name">Языковой образовательный и развивающий лагерь "Junior Camp"</h1>
+                        <div class="subtitle">
+                            <span class="firm">ООО Юниум</span><span class="from">Краснодарский край</span>
+                        </div>
+                        <div class="item-middle">
+                            <div class="item-image">
+                                <img src="./images/photo-1448301566816-a036b4240d58.png" alt="">
+                            </div>
+                            <div class="item-info">
+                                <div class="tags">
+                                    <span class="tag">Почти спортивный</span><span class="tag">Отличный</span>
+                                    <span class="tag">Образовательный</span>
+                                    <span class="tag">Спортивные</span>
+                                </div>
+                                <p class="description">Каждый родитель хочет видеть своего ребёнка самым счастливым.
+                                    Именно поэтому наш детский лагерь уже 11 лет дарит незабываемые каникулы детям и
+                                    подросткам уже двадцать пять лет падряд.</p>
+                                <div class="dates">3 ноября - 15 октября</div>
+                                <a class="see-more" href="index.html">Посмотреть еще смены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="rating">
+                            <div class="rating-stars">
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                                <span class="star">
+                                    <img src="./images/star.png" alt="">
+                                </span>
+                            </div>
+                            <p class="client-rating"><span class="average-rating">4.5</span><span
+                                    class="assessment">/5</span></p>
+                            <p class="reviews">37 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-date">Цена до 28 февраля</div>
+                            <div class="price-tag">22 345 Р</div>
+                        </div>
+                        <a class="button-default item-link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="paginatoion">
+                <div class="pages">
+                    <div class="show-by">
+                        <form action="">
+                            <div class="show-links">
+                                <a class="show-link chosen-link" href="index.html">10</a>
+                                <a class="show-link" href="index.html">40</a>
+                                <a class="show-link" href="index.html">100</a>
+                                <a class="show-link" href="index.html">200</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="numbered-pages">
+                        <span class="prev"></span>
+                        <span class="page first-page"><b class="chosen-page">1</b></span>
+                        <span class="page"><a class="page-link" href="index.html">2</a></span>
+                        <span class="page"><a class="page-link" href="index.html">3</a></span>
+                        <span class="page"><a class="page-link" href="index.html">4</a></span>
+                        <span class="page"><a class="page-link" href="index.html">5</a></span>
+                        <span class="page"><a class="page-link" href="index.html">6</a></span>
+                        <span class="page"><a class="page-link" href="index.html">7</a></span>
+                        <span class="page"><a class="page-link" href="index.html">8</a></span>
+                        <span class="page"><a class="page-link" href="index.html">9</a></span>
+                        <span class="page"><a class="page-link" href="index.html">10</a></span>
+                        <span class="page"><a class="page-link" href="index.html">11</a></span>
+                        <span class="page"><a class="page-link" href="index.html">12</a></span>
+                        <span class="page"><a class="page-link" href="index.html">13</a></span>
+                        <span class="page"><a class="page-link" href="index.html">14</a></span>
+                        <span class="page"><a class="page-link" href="index.html">15</a></span>
+                        <span class="page"><a class="page-link" href="index.html">16</a></span>
+                        <span class="page"><a class="page-link" href="index.html">17</a></span>
+                        <span class="page last-page"><a class="page-link" href="index.html">18</a></span>
+                        <a class="next" href="index.html"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="block-reviews">
+        <div class="filling">
+            <h1 class="reviews-h1">Последние отзывы</h1>
+            <div class="show-reviews">
+                <div class="review">
+                    <div class="posted-camp">
+                        <div class="camp-img"></div>
+                        <h3 class="camp-name">Образовательный лагерь "Junior Camp"</h3>
+                    </div>
+                    <span class="posted-rating">
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-assessment">5.0</span>
+                    </span>
+                    <div class="posted-date">26.02.2016</div>
+                    <p class="posted-text">В качестве отзыва по осеннему заезду хочу проитировать свою дочь Женю:
+                        "Поеду еще в лагерь только с этими людьми! если бы все дети учились в моем классе, и важатые
+                        вели бы уроки - ходила бы в школу с радостью." Это была её первая поездка и очень удачная.
+                        Спасибо всем ребята! Безмерно восхищаюсь Евгенией и Станиславом, видя какие силы они вкладывают
+                        в организаию и наполнение программ.</p>
+                    <div class="posted-by">
+                        <div class="posted-by-name">Анна</div>
+                        <div class="posted-by-status">Родитель</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="posted-camp">
+                        <div class="camp-img"></div>
+                        <h3 class="camp-name">Образовательный лагерь "Junior Camp"</h3>
+                    </div>
+                    <span class="posted-rating">
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-assessment">5.0</span>
+                    </span>
+                    <div class="posted-date">26.02.2016</div>
+                    <p class="posted-text">В качестве отзыва по осеннему заезду хочу проитировать свою дочь Женю:
+                        "Поеду еще в лагерь только с этими людьми! если бы все дети учились в моем классе, и важатые
+                        вели бы уроки - ходила бы в школу с радостью." Это была её первая поездка и очень удачная.
+                        Спасибо всем ребята! Безмерно восхищаюсь Евгенией и Станиславом, видя какие силы они вкладывают
+                        в организаию и наполнение программ.</p>
+                    <div class="posted-by">
+                        <div class="posted-by-name">Анна</div>
+                        <div class="posted-by-status">Родитель</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="posted-camp">
+                        <div class="camp-img"></div>
+                        <h3 class="camp-name">Образовательный лагерь "Junior Camp"</h3>
+                    </div>
+                    <span class="posted-rating">
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-assessment">5.0</span>
+                    </span>
+                    <div class="posted-date">26.02.2016</div>
+                    <p class="posted-text">В качестве отзыва по осеннему заезду хочу проитировать свою дочь Женю:
+                        "Поеду еще в лагерь только с этими людьми! если бы все дети учились в моем классе, и важатые
+                        вели бы уроки - ходила бы в школу с радостью." Это была её первая поездка и очень удачная.
+                        Спасибо всем ребята! Безмерно восхищаюсь Евгенией и Станиславом, видя какие силы они вкладывают
+                        в организаию и наполнение программ.</p>
+                    <div class="posted-by">
+                        <div class="posted-by-name">Анна</div>
+                        <div class="posted-by-status">Родитель</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="posted-camp">
+                        <div class="camp-img"></div>
+                        <h3 class="camp-name">Образовательный лагерь "Junior Camp"</h3>
+                    </div>
+                    <span class="posted-rating">
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-assessment">5.0</span>
+                    </span>
+                    <div class="posted-date">26.02.2016</div>
+                    <p class="posted-text">В качестве отзыва по осеннему заезду хочу проитировать свою дочь Женю:
+                        "Поеду еще в лагерь только с этими людьми! если бы все дети учились в моем классе, и важатые
+                        вели бы уроки - ходила бы в школу с радостью." Это была её первая поездка и очень удачная.
+                        Спасибо всем ребята! Безмерно восхищаюсь Евгенией и Станиславом, видя какие силы они вкладывают
+                        в организаию и наполнение программ.</p>
+                    <div class="posted-by">
+                        <div class="posted-by-name">Анна</div>
+                        <div class="posted-by-status">Родитель</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="posted-camp">
+                        <div class="camp-img"></div>
+                        <h3 class="camp-name">Образовательный лагерь "Junior Camp"</h3>
+                    </div>
+                    <span class="posted-rating">
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-assessment">5.0</span>
+                    </span>
+                    <div class="posted-date">26.02.2016</div>
+                    <p class="posted-text">В качестве отзыва по осеннему заезду хочу проитировать свою дочь Женю:
+                        "Поеду еще в лагерь только с этими людьми! если бы все дети учились в моем классе, и важатые
+                        вели бы уроки - ходила бы в школу с радостью." Это была её первая поездка и очень удачная.
+                        Спасибо всем ребята! Безмерно восхищаюсь Евгенией и Станиславом, видя какие силы они вкладывают
+                        в организаию и наполнение программ.</p>
+                    <div class="posted-by">
+                        <div class="posted-by-name">Анна</div>
+                        <div class="posted-by-status">Родитель</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="posted-camp">
+                        <div class="camp-img"></div>
+                        <h3 class="camp-name">Образовательный лагерь "Junior Camp"</h3>
+                    </div>
+                    <span class="posted-rating">
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-star">
+                            <img src="./images/star-black.png" alt="">
+                        </span>
+                        <span class="posted-assessment">5.0</span>
+                    </span>
+                    <div class="posted-date">26.02.2016</div>
+                    <p class="posted-text">В качестве отзыва по осеннему заезду хочу проитировать свою дочь Женю:
+                        "Поеду еще в лагерь только с этими людьми! если бы все дети учились в моем классе, и важатые
+                        вели бы уроки - ходила бы в школу с радостью." Это была её первая поездка и очень удачная.
+                        Спасибо всем ребята! Безмерно восхищаюсь Евгенией и Станиславом, видя какие силы они вкладывают
+                        в организаию и наполнение программ.</p>
+                    <div class="posted-by">
+                        <div class="posted-by-name">Анна</div>
+                        <div class="posted-by-status">Родитель</div>
+                    </div>
+                </div>
+            </div>
+            <a class="button-default show-more-reviews" href="index.html">Показать другие отзывы</a>
+        </div>
+    </div>
+    <div class="block-need-help">
+        <div class="filling">
+            <h1 class="need-help-h1">Нужна помощь?</h1>
+            <p class="need-help-subtitle">Оставьте заявку и мы поможем выбрать идеальный лагерь!</p>
+            <div class="feedback">
+                <form action="">
+                    <div class="contact">
+                        <label class="contact-label" for="">
+                            <input class="need-help-input" type="text" placeholder="Павел">
+                        </label>
+                        <label class="contact-label" for="">
+                            <input class="need-help-input" type="text" placeholder="E-mail / Телефон">
+                        </label>
+                    </div>
+                    <label for="">
+                        <textarea class="message" placeholder="Сообщение"></textarea>
+                    </label>
+                    <button class="button-default send-message">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </main>
-<footer></footer>
+<footer>
+    <div class="filling">
+        <div class="short-info">
+            <div class="info">
+                <h2 class="info-h2">Мир Лагерей</h2>
+                <ul>
+                    <li class="string">Полный каталог программ отдыха для детей в России, странах СНГ, Европе и мире.
+                    </li>
+                    <li class="string">Мы поможем подобрать вам лучший детский лагерь для вашего ребенка.</li>
+                </ul>
+                <div class="social-icons">
+                    <a class="social-link" href="index.html"><img src="./images/icons/facebook.png" alt=""></a>
+                    <a class="social-link" href="index.html"><img src="./images/icons/vkontakte.png" alt=""></a>
+                    <a class="social-link" href="index.html"><img src="./images/icons/phone.png" alt=""></a>
+                    <a class="social-link" href="index.html"><img src="./images/icons/telegram.png" alt=""></a>
+                    <a class="social-link" href="index.html"><img src="./images/icons/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+            <div class="info">
+                <h2 class="info-h2">Новые программы</h2>
+                <ul>
+                    <li class="string">Детский оздоровтельный лагерь “Искра”<br><span
+                            class="data-published">2018-02-13</span></li>
+                    <li class="string">Детский оздоровтельный лагерь “Искра”<br><span
+                            class="data-published">2018-02-13</span></li>
+                    <li class="string">Детский оздоровтельный лагерь “Искра”<br><span
+                            class="data-published">2018-02-13</span></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2 class="info-h2">Контакты</h2>
+                <ul>
+                    <li class="string">ООО "Многообразие</li>
+                    <li class="string">125080, г Москва, шоссе Волоколамское, дом 1 стр. 1, пом. IV комн. 33</li>
+                    <li class="string">Телефон: <a class="allotment" href="tel:+74996478213">+7 (499) 647-82-13</a></li>
+                    <li class="string">Связаться по любым вопросам: <br><a class="allotment"
+                                                                           href="mailto:contact@mir-lagerey.ru">contact@mir-lagerey.ru</a>
+                    </li>
+                    <li class="string">Реклама, партнерство: <a class="allotment" href="mailto:sales@mir-lagerey.ru">sales@mir-lagerey.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

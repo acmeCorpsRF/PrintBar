@@ -1,21 +1,17 @@
 @font-face {
-    font-family: "Muller Bold";
-    src: url("/fonts/Muller Bold.ttf")
+    font-family: "Muller-Bold";
+    src: url("../fonts/Muller-Bold.ttf")
 }
 
 @font-face {
-    font-family: "Muller Regular";
-    src: url("/fonts/Muller Regular.ttf")
+    font-family: "Muller-Regular";
+    src: url("../fonts/Muller-Regular.ttf")
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    height: 1000px;
 }
 
 img {
@@ -33,13 +29,67 @@ a, button {
     transition: 0.3s linear;
 }
 
+::before, ::after {
+    box-sizing: border-box;
+}
+
 .filling {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 113px 0 92px;
 }
 
-.wrapper {
+@media all and (min-width: 769px) {
+
+    .filling {
+        padding: 0 113px 0 92px;
+    }
+
+}
+
+@media all and (max-width: 768px) and (min-width: 513px) {
+
+    .filling {
+        padding: 0 50px;
+    }
+
+}
+
+@media all and (max-width: 512px) {
+
+    .filling {
+        padding: 0 20px;
+    }
+
+}
+
+.button-default {
+    padding: 0 12px;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1769e3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media all and (min-width: 641px) {
+
+    .button-default {
+        font-size: 18px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .button-default {
+        font-size: 16px;
+    }
+
+}
+
+.market {
     padding: 33px 0;
 }
 
@@ -48,17 +98,58 @@ header {
 }
 
 .logo {
-    margin-left: 10px;
-    font: bold 26px/40px "Muller Bold", sans-serif;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
     text-decoration: none;
     color: #1e1e1e;
 }
 
+@media all and (min-width: 641px) {
+
+    .logo {
+        margin-left: 10px;
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .logo {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
 .search {
     position: relative;
-    float: right;
-    width: 262px;
-    margin-right: 24px;
+}
+
+@media all and (min-width: 641px) {
+
+    .search {
+        width: 262px;
+        margin-right: 24px;
+    }
+
+}
+
+@media all and (max-width: 640px) and (min-width: 385px) {
+
+    .search {
+        width: 190px;
+    }
+
+}
+
+@media all and (min-width: 385px) {
+
+    .search {
+        float: right;
+    }
+
 }
 
 .search-button {
@@ -71,20 +162,53 @@ header {
     cursor: pointer;
 }
 
+@media all and (min-width: 641px) {
+
+    .search-button {
+        top: 1px;
+        width: 38px;
+        height: 38px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .search-button {
+        top: 2px;
+        width: 27px;
+        height: 27px;
+    }
+
+}
+
 .search-input {
     width: 100%;
-    height: 40px;
     padding: 0 11px 0 52px;
     font-size: 16px;
-    font-family: "Muller Regular", sans-serif;
+    font-family: "Muller-Regular", sans-serif;
     color: #1e1e1e;
     border: 1px solid #1e1e1e;
     border-radius: 5px;
 }
 
+@media all and (min-width: 641px) {
+
+    .search-input {
+        height: 40px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .search-input {
+        height: 30px;
+    }
+
+}
+
 .search-input::placeholder {
-    font-size: 16px;
-    font-family: "Muller Regular", sans-serif;
     color: #1e1e1e;
 }
 
@@ -99,8 +223,25 @@ header {
 }
 
 .plate-title {
-    font: bold 28px "Muller Bold", sans-serif;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
     color: #ffffff;
+}
+
+@media all and (min-width: 641px) {
+
+    .plate-title {
+        font-size: 28px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .plate-title {
+        font-size: 20px;
+    }
+
 }
 
 .breadcrumbs {
@@ -109,9 +250,10 @@ header {
 
 .step {
     font-size: 14px;
-    font-family: "Muller Regular", sans-serif;
+    font-family: "Muller-Regular", sans-serif;
     color: #1e1e1e;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .back:hover {
@@ -123,58 +265,191 @@ header {
 }
 
 .page-h1 {
-    font: bold 40px "Muller Bold", sans-serif;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
     text-decoration: none;
     color: #1e1e1e;
 }
 
+@media all and (min-width: 641px) {
+
+    .page-h1 {
+        font-size: 40px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .page-h1 {
+        font-size: 20px;
+    }
+
+}
+
 .search-result {
-    font-size: 24px;
-    font-family: "Muller Regular", sans-serif;
+    font-family: "Muller-Regular", sans-serif;
     color: #1e1e1e;
+}
+
+@media all and (min-width: 641px) {
+
+    .search-result {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .search-result {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
 }
 
 .quantity {
     font-weight: bold;
-    font-family: "Muller Bold", sans-serif;
+    font-family: "Muller-Bold", sans-serif;
     color: #174cd5;
 }
 
 .filter {
-    float: right;
     width: 100%;
-    max-width: 275px;
-    margin-top: 33px;
-    padding: 28px 32px 27px 23px;
     background-color: #f7f7f7;
     box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.16);
     border-radius: 7px;
+    overflow: auto;
+}
+
+@media all and (min-width: 1281px) {
+
+    .filter {
+        margin-top: -88px;
+    }
+
+}
+
+@media all and (min-width: 1153px) {
+
+    .filter {
+        float: right;
+        max-width: 275px;
+    }
+
+}
+
+@media all and (min-width: 641px) {
+
+    .filter {
+        padding: 28px 32px 27px 23px;
+        margin-bottom: 36px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .filter {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
 }
 
 .filter-title {
     display: inline-block;
-    margin-bottom: 18px;
-    font-size: 24px;
-    font-family: "Muller Regular", sans-serif;
+    font-family: "Muller-Regular", sans-serif;
     color: #1e1e1e;
 }
 
-.filter-label {
+@media all and (min-width: 641px) {
+
+    .filter-title {
+        margin-bottom: 18px;
+        font-size: 24px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .filter-title {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+}
+
+@media all and (max-width: 1152px) and (min-width: 641px) {
+
+    .filter-label {
+        float: left;
+        width: 44%;
+        margin-right: 27px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .filter-label {
+        display: block;
+    }
+
+}
+
+.filter-name {
     display: inline-block;
     margin-bottom: 10px;
-    font: bold 18px "Muller Bold", sans-serif;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
     color: #1e1e1e;
+}
+
+@media all and (min-width: 641px) {
+
+    .filter-name {
+        font-size: 18px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .filter-name {
+        font-size: 16px;
+    }
+
 }
 
 .select-wrap {
     position: relative;
     display: block;
-    margin-bottom: 21px;
     overflow: hidden;
     border-radius: 5px;
 }
 
-.caret {
+@media all and (min-width: 641px) {
+
+    .select-wrap {
+        margin-bottom: 21px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .select-wrap {
+        margin-bottom: 15px;
+    }
+
+}
+
+.select-wrap::after {
+    content: '';
     position: absolute;
     top: 50%;
     right: 15px;
@@ -184,36 +459,63 @@ header {
     transform: translateY(-50%);
 }
 
+.select-wrap.open::after {
+    border-top: none;
+    border-bottom: 8px solid #1e1e1e;
+}
+
 .filter-select {
     display: block;
     width: 100%;
-    height: 42px;
     padding: 0 12px;
     font-size: 15px;
-    font-family: "Muller Regular", sans-serif;
+    font-family: "Muller-Regular", sans-serif;
     color: #969696;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-.filter-select:hover + .caret {
-    border-top: none;
-    border-bottom: 8px solid #1e1e1e;
+@media all and (min-width: 641px) {
+
+    .filter-select {
+        height: 42px;
+    }
+
 }
 
-.button-default {
-    padding: 0 12px;
-    font: bold 18px "Muller Bold", sans-serif;
-    text-align: center;
-    color: #ffffff;
-    background-color: #1769e3;
-    border-radius: 5px;
-    cursor: pointer;
+@media all and (max-width: 640px) {
+
+    .filter-select {
+        height: 30px;
+    }
+
 }
 
-.filter-button {
-    width: 220px;
-    height: 42px;
+@media all and (max-width: 1152px) and (min-width: 641px) {
+
+    .filter-button {
+        margin-top: 29px;
+    }
+
+}
+
+@media all and (min-width: 641px) {
+
+    .filter-button {
+        width: 220px;
+        height: 42px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .filter-button {
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+    }
+
 }
 
 .button-default:hover {
@@ -225,7 +527,6 @@ header {
 }
 
 .button-default:active {
-    font-size: 17px;
     background-color: #115ac7;
 }
 
@@ -233,18 +534,240 @@ header {
     font-size: 17px;
 }
 
-.sorting {
-    height: 49px;
-    margin-bottom: 42px;
+@media all and (min-width: 641px) {
+
+    .sorting {
+        padding-bottom: 36px;
+    }
+
 }
 
-.snippet {
-    max-width: 847px;
+@media all and (max-width: 640px) {
+
+    .sorting {
+        padding-bottom: 15px;
+    }
+
+}
+
+.sorting::after {
+    content: '';
+    display: block;
+    clear: left;
+}
+
+.sort-price, .sort-shift-work, .sort-reviews {
+    position: relative;
+}
+
+.sort-price, .sort-shift-work {
+    margin-bottom: 15px;
+}
+
+@media all and (min-width: 1025px) {
+
+    .sort-price {
+        width: 210px;
+    }
+
+    .sort-shift-work {
+        width: 239px;
+    }
+
+    .sort-reviews {
+        width: 248px
+    }
+
+}
+
+@media all and (max-width: 1024px) and (min-width: 641px) {
+
+    .sort-price, .sort-shift-work, .sort-reviews {
+        width: 44%;
+    }
+
+}
+
+@media all and (min-width: 641px) {
+
+    .sort-price, .sort-shift-work, .sort-reviews {
+        float: left;
+        margin-right: 27px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .sort-price, .sort-shift-work, .sort-reviews {
+        display: block;
+    }
+
+}
+
+.sorting-label {
+    position: absolute;
+    top: 45%;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
+    color: #1e1e1e;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+@media all and (min-width: 641px) {
+
+    .sorting-label {
+        left: 26px;
+        font-size: 18px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .sorting-label {
+        left: 20px;
+        font-size: 16px;
+    }
+
+}
+
+.sort-wrap {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.16);
+}
+
+.sort-wrap::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    border-top: 8px solid #1e1e1e;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transform: translateY(-50%);
+}
+
+.sort-price .filter-select {
+    padding-left: 80px;
+}
+
+.sort-shift-work .filter-select {
+    padding-left: 95px;
+}
+
+.sort-reviews .filter-select {
+    padding-left: 110px;
+}
+
+@media all and (min-width: 1153px) {
+
+    .snippet {
+        max-width: 847px;
+        margin-right: 308px;
+    }
+
+}
+
+.window {
+    position: relative;
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.16);
+}
+
+@media all and (min-width: 641px) {
+
+    .window {
+        margin-bottom: 32px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .window {
+        margin-bottom: 20px;
+    }
+
+}
+
+.popular {
+    background-color: #fff0d4;
+    box-shadow: 0 1px 16px 0 rgba(255, 197, 84, 0.49);
+}
+
+.rabber {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 87px;
+    height: 87px;
+    overflow: hidden;
+}
+
+.rabber::before {
+    content: '';
+    position: inherit;
+    border-right: 8px solid transparent;
+    border-bottom: 5px solid #e74c3c;
+    border-left: 4px solid transparent;
+}
+
+.rabber::after {
+    content: '';
+    position: inherit;
+    right: -1px;
+    bottom: 0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #e74c3c;
+    border-bottom: 5px solid transparent;
+}
+
+.rabber-text {
+    position: inherit;
+    top: 20px;
+    right: -35px;
+    display: block;
+    width: 135px;
+    padding: 8px 0;
+    font: bold 9px "Muller-Bold", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #e74c3c;
+    transform: rotate(45deg);
 }
 
 .left-side {
-    margin-right: 223px;
-    padding: 21px 13px 21px 22px;
+    background-color: #ffffff;
+}
+
+@media all and (min-width: 769px) {
+
+    .left-side {
+        margin-right: 223px;
+    }
+
+}
+
+@media all and (min-width: 641px) {
+
+    .left-side {
+        padding: 21px 13px 21px 22px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .left-side {
+        padding: 20px;
+    }
+
 }
 
 .popular .left-side {
@@ -252,12 +775,29 @@ header {
 }
 
 .item-name {
-    font: bold 24px "Muller Bold", sans-serif;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
     color: #1e1e1e;
 }
 
+@media all and (min-width: 641px) {
+
+    .item-name {
+        font-size: 24px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .item-name {
+        font-size: 20px;
+    }
+
+}
+
 .firm, .from {
-    font: 12px "Muller Regular", sans-serif;
+    font: 12px "Muller-Regular", sans-serif;
     color: #1e1e1e;
 }
 
@@ -277,14 +817,211 @@ header {
     transform: translateY(-50%);
 }
 
-.right-side {
-    float: right;
-    width: 223px;
-    background-color: #f4f4f4;
+.item-middle {
+    overflow: auto;
 }
 
-.popular .right-side {
-    background-color: #fff0d4;
+@media all and (min-width: 641px) {
+
+    .item-middle {
+        padding-top: 19px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .item-middle {
+        padding-top: 15px;
+    }
+
+}
+
+.item-image {
+    float: left;
+    margin-right: 21px;
+}
+
+@media all and (min-width: 897px) {
+
+    .item-image {
+        max-width: 210px;
+    }
+
+}
+
+@media all and (max-width: 896px) {
+
+    .item-image {
+        max-width: 100px;
+    }
+
+}
+
+.tags {
+    overflow: auto;
+}
+
+.tag {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    font: 11px "Muller-Regular", sans-serif;
+    color: #242424;
+    border: 2px solid #ffc554;
+    border-radius: 9px;
+}
+
+@media all and (min-width: 641px) {
+
+    .tag {
+        padding: 6px 11px 5px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .tag {
+        padding: 6px;
+    }
+
+}
+
+.description {
+    padding-top: 9px;
+    font: 13px/17px "Muller-Regular", sans-serif;
+}
+
+@media all and (min-width: 641px) {
+
+    .description {
+        padding-bottom: 16px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .description {
+        padding-bottom: 15px;
+    }
+
+}
+
+.infrastructure {
+    overflow: auto;
+}
+
+@media all and (min-width: 641px) {
+
+    .infrastructure {
+        margin-bottom: 17px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .infrastructure {
+        margin-bottom: 15px;
+    }
+
+}
+
+.building {
+    position: relative;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 7px;
+    padding-left: 20px;
+    font: 11px/13px "Muller-Regular", sans-serif;
+    color: #000000;
+}
+
+.building::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #d7dcde;
+    border-radius: 50%;
+}
+
+.building::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 3px;
+    height: 3px;
+    background-color: #d7dcde;
+    border-radius: 50%;
+}
+
+.dates {
+    margin-bottom: 8px;
+    font: bold 12px "Muller-Bold", sans-serif;
+    color: #242424;
+}
+
+.see-more {
+    font: 12px "Muller-Regular", sans-serif;
+    color: #1769e3;
+}
+
+.see-more:hover {
+    text-decoration: none;
+}
+
+@media all and (min-width: 769px) {
+
+    .right-side {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 223px;
+        padding: 47px 20px 53px 32px;
+        text-align: center;
+    }
+
+}
+
+@media all and (min-width: 769px) {
+
+    .popular .right-side {
+        padding-top: 55px;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .right-side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+}
+
+@media all and (min-width: 769px) {
+
+    .rating-stars {
+        margin-bottom: 8px;
+    }
+
+}
+
+@media all and (max-width: 512px) {
+
+    .rating-stars {
+        display: none;
+    }
+
 }
 
 .star {
@@ -293,12 +1030,937 @@ header {
     height: 22px;
 }
 
-@font-face {
-    font-family: "Muller Bold";
-    src: url("/fonts/Muller Bold.ttf")
+@media all and (min-width: 769px) {
+
+    .client-rating {
+        margin-bottom: 7px;
+    }
+
 }
 
-@font-face {
-    font-family: "Muller Regular";
-    src: url("/fonts/Muller Regular.ttf")
+.average-rating {
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
+    color: #1e1e1e;
+}
+
+@media all and (min-width: 641px) {
+
+    .average-rating {
+        font-size: 26px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .average-rating {
+        font-size: 20px;
+    }
+
+}
+
+.assessment {
+    font-family: "Muller-Regular", sans-serif;
+    color: #242424;
+}
+
+@media all and (min-width: 641px) {
+
+    .assessment {
+        font-size: 20px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .assessment {
+        font-size: 16px;
+    }
+
+}
+
+.reviews {
+    font: 13px "Muller-Regular", sans-serif;
+    color: #242424;
+}
+
+@media all and (min-width: 769px) {
+
+    .reviews {
+        margin-bottom: 25px;
+    }
+
+    .popular .reviews {
+        margin-bottom: 35px
+    }
+
+}
+
+.price-date {
+    margin-bottom: 7px;
+    font: 11px "Muller-Regular", sans-serif;
+    color: #242424;
+}
+
+.price-tag {
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
+    color: #1e1e1e;
+}
+
+@media all and (min-width: 769px) {
+
+    .price-tag {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media all and (min-width: 641px) {
+
+    .price-tag {
+        font-size: 30px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .price-tag {
+        font-size: 20px;
+    }
+
+}
+
+.item-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media all and (min-width: 641px) {
+
+    .item-link {
+        line-height: 49px;
+    }
+}
+
+@media all and (max-width: 640px) {
+
+    .item-link {
+        line-height: 30px;
+    }
+
+}
+
+@media all and (min-width: 769px) {
+
+    .item-link {
+        width: 100%;
+    }
+
+}
+
+@media all and (min-width: 1153px) {
+
+    .paginatoion {
+        max-width: 847px;
+    }
+
+}
+
+@media all and (min-width: 1153px) {
+
+    .pages {
+        padding-top: 33px;
+    }
+
+}
+
+.numbered-pages {
+    position: relative;
+}
+
+@media all and (min-width: 1153px) {
+
+    .numbered-pages {
+        margin-right: 223px;
+        padding-right: 55px;
+    }
+
+}
+
+@media all and (max-width: 1152px) and (min-width: 641px) {
+
+    .numbered-pages {
+        padding-top: 30px;
+    }
+
+}
+
+@media all and (max-width: 1152px) and (min-width: 513px) {
+
+    .numbered-pages {
+        padding-left: 120px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .numbered-pages {
+        padding-top: 15px;
+    }
+
+}
+
+.numbered-pages::before {
+    content: 'Страницы';
+    position: absolute;
+    font-family: "Muller-Regular", sans-serif;
+    color: #000000;
+}
+
+.numbered-pages::after {
+    content: '';
+    display: block;
+    clear: left;
+}
+
+@media all and (min-width: 1153px) {
+
+    .numbered-pages::before {
+        top: -33px;
+    }
+
+}
+
+@media all and (max-width: 1152px) {
+
+    .numbered-pages::before {
+        top: 40px;
+        left: 0;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .numbered-pages::before {
+        font-size: 16px;
+    }
+
+}
+
+@media all and (min-width: 641px) {
+
+    .numbered-pages::before {
+        font-size: 18px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .numbered-pages::before {
+        font-size: 16px;
+    }
+
+}
+
+@media all and (max-width: 512px) {
+
+    .numbered-pages::before {
+        content: '';
+    }
+
+}
+
+.prev {
+    position: relative;
+    float: left;
+    width: 47px;
+    height: 39px;
+    margin-right: 2px;
+    background-color: #f4f4f4;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+}
+
+.prev::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: 7px solid transparent;
+    border-right: 12px solid #b8b8b8;
+    border-bottom: 7px solid transparent;
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    position: relative;
+    float: left;
+    width: 47px;
+    height: 39px;
+    margin-left: 2px;
+    background-color: #f4f4f4;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+.next::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: 7px solid transparent;
+    border-left: 12px solid #b8b8b8;
+    border-bottom: 7px solid transparent;
+    transform: translate(-50%, -50%);
+}
+
+.next:hover::after {
+    border-left: 12px solid #1769e3;
+}
+
+.pages-wrap {
+    float: left;
+    padding: 0 14px;
+    background-color: #f4f4f4;
+    overflow: auto;
+    list-style-type: none;
+}
+
+.page {
+    float: left;
+    height: 39px;
+    margin-bottom: 2px;
+    background-color: #f4f4f4;
+}
+
+.page:not(.first-page):not(.last-page) {
+    width: 24px;
+}
+
+.first-page {
+    width: 38px;
+    padding-left: 14px;
+}
+
+.last-page {
+    width: 38px;
+    padding-right: 14px;
+}
+
+.page-link {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    font: bold 12px/14px "Muller-Bold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: transparent;
+    border-radius: 50%;
+    background-color: #b8b8b8;
+    transform: translate(-50%, -50%);
+}
+
+.page-link:hover {
+    width: 24px;
+    height: 24px;
+    padding-top: 7px;
+    color: #ffffff;
+    background-color: #1769e3;
+}
+
+.chosen-page {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding-top: 3px;
+    font: bold 12px/14px "Muller-Bold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #b8b8b8;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.show-by {
+    position: relative;
+    padding-right: 15px;
+}
+
+.show-by::before {
+    content: 'Показать по:';
+    position: absolute;
+    font-family: "Muller-Regular", sans-serif;
+    color: #000000;
+}
+
+@media all and (min-width: 1153px) {
+
+    .show-by {
+        float: right;
+        width: 223px;
+        padding-left: 60px;
+    }
+
+    .show-by::before {
+        top: -33px;
+        font-size: 18px;
+    }
+
+}
+
+@media all and (max-width: 1152px) {
+
+    .show-by {
+        width: 273px;
+        padding-left: 120px;
+    }
+
+    .show-by::before {
+        top: 10px;
+        left: 0;
+    }
+
+}
+
+@media all and (min-width: 641px) {
+
+    .show-by::before {
+        font-size: 18px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .show-by::before {
+        font-size: 16px;
+    }
+
+}
+
+.show-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 39px;
+    padding: 0 14px 0 11px;
+    background-color: #f4f4f4;
+}
+
+.show-link {
+    display: inline-block;
+    margin-top: 6px;
+    width: 27px;
+    height: 27px;
+    padding-top: 7px;
+    font: bold 12px/14px "Muller-Bold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #b8b8b8;
+    border-radius: 50%;
+}
+
+.show-link:hover {
+    background-color: #1769e3;
+}
+
+.chosen-link {
+    background-color: #1769e3;
+}
+
+.block-reviews {
+    padding: 45px 0 55px;
+    background-color: #f8f8f8;
+}
+
+.reviews-h1 {
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
+    color: #1f1f1f;
+    text-align: center;
+}
+
+@media all and (min-width: 641px) {
+
+    .reviews-h1 {
+        margin-bottom: 28px;
+        font-size: 45px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .reviews-h1 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+}
+
+.show-reviews {
+    overflow: auto;
+}
+
+.review {
+    float: left;
+    margin-bottom: 24px;
+}
+
+@media all and (min-width: 1153px) {
+
+    .review {
+        width: 33%;
+        padding: 0 40px 0 20px;
+    }
+
+}
+
+@media all and (max-width: 1152px) and (min-width: 641px) {
+
+    .review {
+        width: 49%;
+        padding: 0 0 0 15px;
+    }
+
+}
+
+.posted-camp {
+    overflow: auto;
+    margin-bottom: 16px;
+}
+
+.camp-img {
+    float: left;
+    margin-right: 17px;
+    width: 46px;
+    height: 46px;
+    background-color: #ffc554;
+}
+
+.camp-name {
+    padding-top: 7px;
+    padding-right: 60px;
+    font: bold 12px "Muller-Bold", sans-serif;
+    color: #343434;
+}
+
+.posted-star {
+    display: inline-block;
+    width: 13px;
+}
+
+.posted-assessment {
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 3px;
+    font: bold 11px "Muller-Bold", sans-serif;
+    color: #1e1e1e;
+    vertical-align: top;
+}
+
+.posted-date {
+    padding: 15px 0;
+    font-size: 11px;
+    font-family: "Muller-Regular", sans-serif;
+    color: #1e1e1e;
+}
+
+.posted-text {
+    margin-bottom: 15px;
+    font: italic 11px/21px "Muller-Regular", sans-serif;
+    color: #1e1e1e;
+}
+
+.posted-by-name {
+    margin-bottom: 2px;
+    font: bold 16px "Muller-Bold", sans-serif;
+    color: #343434;
+}
+
+.posted-by-status {
+    font-size: 16px;
+    font-family: "Muller-Regular", sans-serif;
+    color: #343434;
+}
+
+.show-more-reviews {
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+@media all and (min-width: 641px) {
+
+    .show-more-reviews {
+        display: block;
+        width: 284px;
+        font-size: 20px;
+        line-height: 49px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .show-more-reviews {
+        display: block;
+        width: 216px;
+        line-height: 30px;
+    }
+
+}
+
+.block-need-help {
+    padding: 45px 0 55px;
+    background-image: url("../images/need-help-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.4);
+}
+
+.need-help-h1 {
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media all and (min-width: 641px) {
+
+    .need-help-h1 {
+        margin-bottom: 16px;
+        font-size: 45px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .need-help-h1 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+}
+
+.need-help-subtitle {
+    font-family: "Muller-Regular", sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media all and (min-width: 641px) {
+
+    .need-help-subtitle {
+        margin-bottom: 33px;
+        font-size: 22px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .need-help-subtitle {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+}
+
+.feedback {
+    max-width: 555px;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 641px) {
+
+    .contact {
+        margin-bottom: 23px;
+        overflow: auto;
+    }
+
+}
+
+@media all and (max-width: 640px) and (min-width: 513px) {
+
+    .contact {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media all and (min-width: 513px) {
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.contact-label {
+    display: inline-block;
+}
+
+@media all and (min-width: 641px) {
+
+    .contact-label {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .contact-label:first-of-type {
+        float: left;
+    }
+
+    .contact-label:last-of-type {
+        float: right;
+    }
+
+}
+
+@media all and (max-width: 640px) and (min-width: 513px) {
+
+    .contact-label {
+        width: 49%;
+    }
+
+}
+
+@media all and (max-width: 512px) {
+
+    .contact-label {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+}
+
+.need-help-input {
+    width: 100%;
+    padding: 0 23px;
+    font: 16px "Muller-Regular", sans-serif;
+    color: #242424;
+    border: 2px solid #ffc554;
+    border-radius: 9px;
+}
+
+@media all and (min-width: 641px) {
+
+    .need-help-input {
+        height: 45px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .need-help-input {
+        height: 30px;
+    }
+
+}
+
+.need-help-input::placeholder {
+    color: #1e1e1e;
+}
+
+.need-help-input:focus::placeholder {
+    color: transparent;
+}
+
+.message {
+    display: block;
+    width: 100%;
+    margin-bottom: 44px;
+    padding: 18px 18px;
+    font-size: 16px;
+    font-family: "Muller-Regular", sans-serif;
+    color: #969696;
+    border-radius: 9px;
+}
+
+@media all and (min-width: 641px) {
+
+    .message {
+        height: 178px;
+    }
+
+}
+
+.send-message {
+    display: block;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 641px) {
+
+    .send-message {
+        width: 264px;
+        line-height: 49px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .send-message {
+        line-height: 30px;
+    }
+
+}
+
+footer {
+    padding: 36px 0 78px 0;
+    background-color: #191919;
+}
+
+@media all and (min-width: 1153px) {
+
+    .short-info {
+        padding: 0 55px;
+    }
+
+}
+
+@media all and (min-width: 897px) {
+
+    .short-info {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media all and (max-width: 896px) {
+
+    .short-info {
+        overflow: auto;
+    }
+
+}
+
+.short-info::after {
+    content: '';
+    display: block;
+    clear: left;
+}
+
+.info {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+}
+
+.info:first-of-type {
+    padding-bottom: 103px;
+}
+
+@media all and (min-width: 897px) {
+
+    .info {
+        max-width: 325px;
+    }
+
+}
+
+@media all and (max-width: 1152px) {
+
+    .info {
+        margin-bottom: 20px;
+    }
+
+}
+
+.info-h2 {
+    width: 232px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: "Muller-Bold", sans-serif;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media all and (min-width: 641px) {
+
+    .info-h2 {
+        font-size: 22px;
+        margin-bottom: 19px;
+    }
+
+}
+
+@media all and (max-width: 640px) {
+
+    .info-h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+}
+
+.string {
+    margin-bottom: 19px;
+    font-size: 15px;
+    font-family: "Muller-Regular", sans-serif;
+    color: #ffffff;
+    list-style-type: none;
+}
+
+.data-published {
+    font-size: 12px;
+    font-family: "Muller-Regular", sans-serif;
+    color: #b2b2b2;
+}
+
+.allotment {
+    font: bold 15px "Muller-Bold", sans-serif;
+    color: #ffc554;
+    text-decoration: none;
+}
+
+.allotment:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    width: 216px;
+}
+
+@media all and (min-width: 897px) {
+
+    .social-icons {
+        position: absolute;
+    }
+
+}
+
+.social-link {
+    display: inline-block;
+    width: 28px;
+}
+
+.social-link:not(:last-of-type) {
+    margin-right: 12px;
 }
